@@ -1,5 +1,5 @@
 package aplicativo.funcionalidades.interfaces;
 
-public interface Pagamento {
+public interface EntradaValor {
 
 }

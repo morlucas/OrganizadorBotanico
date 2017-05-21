@@ -2,13 +2,12 @@ package aplicativo.funcionalidades.interfaces;
 
 import java.util.Calendar;
 
-public interface Recebimento {
+public interface Financas {
 	
-	public Calendar getDataRecebimento();
+	public Calendar getDatPagamento();
 	
 	public Object getReferencia();
 	
-	public float getValorRecebido();
-	
+	public float getValorPago();
 	
 }
