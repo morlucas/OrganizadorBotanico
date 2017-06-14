@@ -24,7 +24,7 @@ public interface Semente extends Planta {
 			String tipoDeJarro,
 			String nomeEspecie,
 			String nome,
-			boolean isProduto);
+			boolean isProduto) throws Exception;
 	
 	
 	

@@ -46,8 +46,10 @@ public class SementeImp extends PlantaImp implements Semente {
 									String tipoDeJarro,
 									String nomeEspecie,
 									String nome,
-									boolean isProduto) {
+									boolean isProduto) throws Exception {
 		
+		
+		if(this.qnt < qntPlantada) throw new Exception("Sementes insuficientes.");
 		this.isPlantada = isPlantada;
 		this.dataPlantio.add(dataPlantio);
 		this.qntPlantada.add(qntPlantada);
@@ -57,7 +59,6 @@ public class SementeImp extends PlantaImp implements Semente {
 				nomeEspecie,
 				nome,
 				isProduto);
-		
 		Math.abs(qntPlantada);
 		this.qnt -= qntPlantada;
 		return plantada;
